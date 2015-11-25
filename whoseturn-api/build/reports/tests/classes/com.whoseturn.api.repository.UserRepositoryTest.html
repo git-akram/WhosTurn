@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.whoseturn.api.repository.UserRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.whoseturn.api.repository.UserRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.whoseturn.api.repository.html">com.whoseturn.api.repository</a> &gt; UserRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.140s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testFindAll</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFindById</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPersistUser</td>
+<td>0.094s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPersistWrong</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:29:01,354  INFO DefaultTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:29:01,355  INFO DefaultTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3bd62615, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ea3e428, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6674e2a1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5be6d76e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@510ab489, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60b99824]
+17:29:01,401  INFO TransactionContext:101 - Began transaction (1) for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@1bd937c, testMethod = testPersistUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@304e7d0b]; rollback [true]
+17:29:01,428 DEBUG SQL:109 - select user0_.id as id1_1_, user0_.createDate as createDa2_1_, user0_.lastUpdate as lastUpda3_1_, user0_.username as username4_1_ from User user0_
+Hibernate: select user0_.id as id1_1_, user0_.createDate as createDa2_1_, user0_.lastUpdate as lastUpda3_1_, user0_.username as username4_1_ from User user0_
+17:29:01,429 TRACE BasicExtractor:78 - extracted value ([id1_1_] : [BIGINT]) - [1]
+17:29:01,431 TRACE BasicExtractor:78 - extracted value ([createDa2_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.786]
+17:29:01,431 TRACE BasicExtractor:78 - extracted value ([lastUpda3_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.786]
+17:29:01,432 TRACE BasicExtractor:78 - extracted value ([username4_1_] : [VARCHAR]) - [toto]
+17:29:01,433 TRACE BasicExtractor:78 - extracted value ([id1_1_] : [BIGINT]) - [2]
+17:29:01,433 TRACE BasicExtractor:78 - extracted value ([createDa2_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.79]
+17:29:01,434 TRACE BasicExtractor:78 - extracted value ([lastUpda3_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.79]
+17:29:01,434 TRACE BasicExtractor:78 - extracted value ([username4_1_] : [VARCHAR]) - [Bob]
+17:29:01,439 DEBUG SQL:109 - insert into User (id, createDate, lastUpdate, username) values (null, ?, ?, ?)
+Hibernate: insert into User (id, createDate, lastUpdate, username) values (null, ?, ?, ?)
+17:29:01,441 TRACE BasicBinder:81 - binding parameter [1] as [TIMESTAMP] - [Wed Nov 25 17:29:01 CET 2015]
+17:29:01,442 TRACE BasicBinder:81 - binding parameter [2] as [TIMESTAMP] - [Wed Nov 25 17:29:01 CET 2015]
+17:29:01,443 TRACE BasicBinder:81 - binding parameter [3] as [VARCHAR] - [max]
+17:29:01,446 DEBUG SQL:109 - select user0_.id as id1_1_, user0_.createDate as createDa2_1_, user0_.lastUpdate as lastUpda3_1_, user0_.username as username4_1_ from User user0_
+Hibernate: select user0_.id as id1_1_, user0_.createDate as createDa2_1_, user0_.lastUpdate as lastUpda3_1_, user0_.username as username4_1_ from User user0_
+17:29:01,447 TRACE BasicExtractor:78 - extracted value ([id1_1_] : [BIGINT]) - [1]
+17:29:01,448 TRACE BasicExtractor:78 - extracted value ([id1_1_] : [BIGINT]) - [2]
+17:29:01,448 TRACE BasicExtractor:78 - extracted value ([id1_1_] : [BIGINT]) - [3]
+17:29:01,484  INFO TransactionContext:136 - Rolled back transaction for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@1bd937c, testMethod = testPersistUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+17:29:01,487  INFO TransactionContext:101 - Began transaction (1) for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@ddc4997, testMethod = testFindAll@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@304e7d0b]; rollback [true]
+17:29:01,488 DEBUG SQL:109 - select user0_.id as id1_1_, user0_.createDate as createDa2_1_, user0_.lastUpdate as lastUpda3_1_, user0_.username as username4_1_ from User user0_
+Hibernate: select user0_.id as id1_1_, user0_.createDate as createDa2_1_, user0_.lastUpdate as lastUpda3_1_, user0_.username as username4_1_ from User user0_
+17:29:01,489 TRACE BasicExtractor:78 - extracted value ([id1_1_] : [BIGINT]) - [1]
+17:29:01,489 TRACE BasicExtractor:78 - extracted value ([createDa2_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.786]
+17:29:01,490 TRACE BasicExtractor:78 - extracted value ([lastUpda3_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.786]
+17:29:01,490 TRACE BasicExtractor:78 - extracted value ([username4_1_] : [VARCHAR]) - [toto]
+17:29:01,491 TRACE BasicExtractor:78 - extracted value ([id1_1_] : [BIGINT]) - [2]
+17:29:01,491 TRACE BasicExtractor:78 - extracted value ([createDa2_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.79]
+17:29:01,492 TRACE BasicExtractor:78 - extracted value ([lastUpda3_1_] : [TIMESTAMP]) - [2015-11-25 17:29:00.79]
+17:29:01,492 TRACE BasicExtractor:78 - extracted value ([username4_1_] : [VARCHAR]) - [Bob]
+17:29:01,502  INFO TransactionContext:136 - Rolled back transaction for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@ddc4997, testMethod = testFindAll@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+17:29:01,505  INFO TransactionContext:101 - Began transaction (1) for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@3649df7f, testMethod = testPersistWrong@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@304e7d0b]; rollback [true]
+17:29:01,505 DEBUG SQL:109 - insert into User (id, createDate, lastUpdate, username) values (null, ?, ?, ?)
+Hibernate: insert into User (id, createDate, lastUpdate, username) values (null, ?, ?, ?)
+17:29:01,506 TRACE BasicBinder:81 - binding parameter [1] as [TIMESTAMP] - [Wed Nov 25 17:29:01 CET 2015]
+17:29:01,507 TRACE BasicBinder:81 - binding parameter [2] as [TIMESTAMP] - [Wed Nov 25 17:29:01 CET 2015]
+17:29:01,507 TRACE BasicBinder:69 - binding parameter [3] as [VARCHAR] - [null]
+17:29:01,508  WARN SqlExceptionHelper:144 - SQL Error: 23502, SQLState: 23502
+17:29:01,508 ERROR SqlExceptionHelper:146 - NULL not allowed for column &quot;USERNAME&quot;; SQL statement:
+insert into User (id, createDate, lastUpdate, username) values (null, ?, ?, ?) [23502-190]
+17:29:01,516  INFO TransactionContext:136 - Rolled back transaction for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@3649df7f, testMethod = testPersistWrong@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+17:29:01,519  INFO TransactionContext:101 - Began transaction (1) for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@4ed0f9c0, testMethod = testFindById@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@304e7d0b]; rollback [true]
+17:29:01,522 DEBUG SQL:109 - select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.lastUpdate as lastUpda3_1_0_, user0_.username as username4_1_0_ from User user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.lastUpdate as lastUpda3_1_0_, user0_.username as username4_1_0_ from User user0_ where user0_.id=?
+17:29:01,523 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+17:29:01,527 TRACE BasicExtractor:78 - extracted value ([createDa2_1_0_] : [TIMESTAMP]) - [2015-11-25 17:29:00.786]
+17:29:01,528 TRACE BasicExtractor:78 - extracted value ([lastUpda3_1_0_] : [TIMESTAMP]) - [2015-11-25 17:29:00.786]
+17:29:01,529 TRACE BasicExtractor:78 - extracted value ([username4_1_0_] : [VARCHAR]) - [toto]
+17:29:01,533  INFO TransactionContext:136 - Rolled back transaction for test context [DefaultTestContext@5c9cf0b0 testClass = UserRepositoryTest, testInstance = com.whoseturn.api.repository.UserRepositoryTest@4ed0f9c0, testMethod = testFindById@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21191f78 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.whoseturn.api.configuration.db.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{dev}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.9</a> at 25 nov. 2015 17:29:01</p>
+</div>
+</div>
+</body>
+</html>

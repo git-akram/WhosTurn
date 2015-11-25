@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Shared mapped attribute by all entities of the blog.
+ * Shared mapped attribute by all entities.
  *
  */
 @MappedSuperclass
